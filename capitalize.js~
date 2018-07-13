@@ -1,0 +1,28 @@
+// Capitalize the First Letter in the Sentence 
+
+
+const test = "when we all Get to Heaven";
+
+// function textCase(set){
+//   let setArr = set.split(' ');
+//   let tArr = [ ];
+//   for (i=0; i < setArr.length; i++){
+//      tArr.push(setArr[i].charAt().toUpperCase().concat(setArr[i].slice(1)));
+// //       console.log(tArr.join(' '));
+//   }
+//         console.log(tArr.join(' '));
+// }
+
+// textCase(text);
+
+
+// USING REGEX
+// let test = /\s/;
+
+
+// const capitalize = str => str.split(' ').map(cap => cap[0].toUpperCase() + cap.slice(1)).join(' ');
+// capitalize(test);
+
+
+const capitalized = str => str.split(' ').reduce((cap, acc) => (cap[0].toUpperCase() + cap.slice(1)) + ` ${acc}`);
+capitalized(test);
