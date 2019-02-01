@@ -16,7 +16,8 @@ function reverse(str) {
 
 // using reduce accumulator and current value
 function reverse(str) {
-  return str.split("").reduce((acc, curValue) => curValue + acc);
+  return str.split("").reduce((acc, curValue) => {curValue + acc}, '');
+  // Note in this empty quotes, this is the starting arguement for our reduce function
 }
 
 // using the for of syntax
@@ -32,6 +33,7 @@ function reverse(str) {
 
     // use a debugger 
     // - node inspect file.js
+    // enter the REPL mode by typing `repl` then you can evaluate every variable and their value
     // This can iterate over for loops, reduce, map statements so you can see behind the hood
     // For functions, call the functions manually
   }
