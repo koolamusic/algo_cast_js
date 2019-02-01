@@ -6,6 +6,16 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-function reverse(str) {}
+function reverse(str) {
+  return str
+    .split("")
+    .reverse("")
+    .join("");
+}
+
+// using reduce accumulator and current value
+function reverse(str) {
+  return str.split("").reduce((acc, curValue) => curValue + acc);
+}
 
 module.exports = reverse;
