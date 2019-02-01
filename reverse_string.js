@@ -1,12 +1,10 @@
 var strn = 'bernadine';
 
-// REDUCE 
+// REDUCE
 console.log(strn.split('').reduce(function (acc, curv
                                            ) {
-  return curv + acc; 
-}, '' 
-                                
- ));
+  return curv + acc;
+}, '' ));
 
 
 
